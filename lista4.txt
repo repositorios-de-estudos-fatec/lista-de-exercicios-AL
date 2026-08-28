@@ -1,0 +1,84 @@
+1
+import random
+lis = random.sample(range(1,100), 10)
+print(lis)
+maior = lis[0]
+menor = lis[0]
+for x in lis:
+    if x > maior:
+      maior = x
+    if x < menor:
+       menor = x
+print(maior)
+print(menor)
+
+2
+import random
+lis = random.sample(range(1,100), 20)
+print(lis)
+par= []
+impar = []
+for x in lis:
+    if (x%2) == 0:
+      par.append(x)
+    else:
+       
+       impar.append(x)
+print(par)
+print(impar)
+
+3
+import random
+v1 = random.sample(range(1,100), 10)
+print(v1)
+v2 = random.sample(range(1,100), 10)
+print(v2)
+v3 = []
+for x in range(0,10):
+    v3.append(v1[x])
+    v3.append(v2[x])
+
+print(v3)
+
+4
+
+a = '''The Python Software Foundation and the global Python
+community welcome and encou
+rage participation by everyone. Our community is based on
+mutual respect, tolerance, and encouragement, and we are working to help each other live up
+to these principles. We want our community to be more diverse: whoever you are, and
+whatever your backgrou
+nd, we welcome you.'''
+a = a.lower()
+a = a.replace(",", "")
+a = a.replace(".", "")
+a = a.split(" ")
+l =["p","y","t","h","o","n"]
+nl =[]
+for x in a:
+    for y in l:
+        if x.startswith(y) or x.endswith(y):
+            nl.append(x)
+        
+
+print(nl)
+
+5
+a = '''The Python Software Foundation and the global Python community welcome and encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles. We want our community to be more diverse: whoever you are, and whatever your background, we welcome you.'''
+a = a.lower()
+a = a.replace(",", "")
+a = a.replace(".", "")
+a = a.replace(":", "")
+a = a.split(" ")
+nl =[]
+
+for x in a:
+        if len(x) > 4:
+            
+           if "p" or"y"or"t" or "h" or "o" or "n" in x:
+                 nl.append(x)
+                  
+             
+        
+
+print(nl)

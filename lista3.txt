@@ -1,0 +1,58 @@
+1
+
+while True:
+    nota = float(input("digite uma nota valida"))
+    if 0 <= nota <= 10:
+        print(nota)
+        break
+    else:
+        print("nota invalida, tente novamente")
+
+2
+
+while True:
+    nome = str(input("digite um nome "))
+    senha = str(input("digite uma senha "))
+    if  nome != senha:
+        print("tudo certo")
+        break
+    else:
+        print("nome e senha iguais, tente novamente")
+
+        3
+
+a = 80000
+b = 200000
+anos = 0
+while a < b:
+    anos = anos +1
+    a = a + a * 0.03
+    b = b + b * 0.015
+print(f"foram necessarios {anos} anos")
+
+4
+
+pos = int(input("digite a posição do fibonaci"))
+x = 1
+ant = 0
+fibo = 1
+while x < pos:
+
+    resu = ant + fibo
+    ant = fibo
+    fibo = resu
+   
+    x = x +1
+
+print(f"o numero da posição {x}, é {fibo}")
+
+5
+n1 = int(input("digite n "))
+n2 = int(input("digite n2 "))
+n3 = 0
+while n2 != 0:
+    n3  = n2
+    n2 = n1 % n2
+    n1 = n3
+
+print(f"o mdc é {n1}")

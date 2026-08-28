@@ -1,0 +1,79 @@
+1
+
+lado1 = int(input("digite o lado1 "))
+lado2 = int(input("digite o lado2 "))
+lado3 = int(input("digite o lado3 "))
+if (lado1 + lado2 > lado3) and (lado1 + lado3 > lado2) and (lado2 + lado3 > lado1):
+    if lado1 == lado2 == lado3:
+        print("é equilatero")
+    elif lado1 == lado2 or lado2 == lado3 or lado1 == lado3:
+        print("isoceles")
+    else:
+        print("escaleno")
+else:
+    print("não é triangulo")
+
+2
+ano = int(input("digite o ano"))
+if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+    print("é bissexto")
+else:
+    print("não é bissexto")
+
+3
+peso = int(input("digite o peso: "))
+excesso = 0
+multa = 0
+
+if peso>50:
+    excesso = peso -50
+    multa = excesso * 4
+    print(f"passou do peso por {excesso} sua multa é de R${multa},00 ")
+else:
+    print(f"excesso: {excesso} multa:{multa}")
+
+
+4 e 5
+
+
+n1 = int(input("digite o n1 "))
+n2 = int(input("digite o n2 "))
+n3 = int(input("digite o n3 "))
+
+if n1 == n2 ==n3:
+    print("são iguais")
+else:
+    maior = n1
+    menor = n1
+
+    if  n2>maior:
+     maior = n2
+    if n3>maior:
+        maior=n3
+
+    print(f"o maior é {maior}") 
+
+    if  n2<menor:
+     menor = n2
+    if n3<menor:
+        menor = n3
+
+    print(f"o menor é {menor}") 
+
+6
+
+ghora = float(input("quanto ganha por hora"))
+hora = int(input("quantas horas trabalhas"))
+salario = ghora*hora
+print(f"seu salario bruto é{salario}, pagou {salario*0.11} de ir, {salario*0.08}  de inss, {salario*0.05} pro sindicato. liquido: {salario *0.76}")
+
+7
+
+metros = int(input("digite os metros quadrados da area"))
+
+if metros % 54 == 0:
+    latas= metros/54
+    print(f"vai precisar de {latas} e vai gastar R${latas* 80}")
+else:
+    latas = int(metros/54)+1
+    print(f"vai precisar de {latas} e vai gastar R${latas* 80}")
