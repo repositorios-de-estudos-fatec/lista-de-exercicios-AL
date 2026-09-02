@@ -36,7 +36,6 @@ for i in range(18643,33088):
 
 print(cont)
 5
-
 lista = '''213752 216732 221063 221545 225583 229133 230648 233222
 236043 237330 239636 240138 242123 246224 249183 252936
 254711 257200 257607 261424 263814 266794 268649 273050
@@ -64,9 +63,30 @@ lista = '''213752 216732 221063 221545 225583 229133 230648 233222
 662224 666265 668010 672480 672695 676868 677125 678315
 '''.split()
 cont = 0
-def chato(f):
 
-    return True
+def chato(f):
+    for x in f:
+        if x+x in f:
+            print("tem igual")
+            return True
+            break
+
+        else:
+            print("nao tem igual")
+            return False
+
+c = 0
+def legal(f):
+    c = 0
+    for x in f:
+        c = c +  int(x)
+    if c % 2 == 0:
+        return True
+    else:
+        return False
+
+
+print(chato(lista))
 
 for f in lista:
     if not chato(f) and legal(f) and not azar(f):
